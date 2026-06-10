@@ -107,3 +107,29 @@ Multiple targets can be added as an array (attention to have unique name for eah
   }
 ]
 ```
+
+---
+
+## License
+
+This repository is released under the **MIT License**.
+
+---
+
+## XR Engine License (Excerpt)
+
+This project includes the 8th Wall XR Engine, provided by Niantic Spatial, Inc.
+
+The engine is distributed under the [XR Engine License Agreement](https://github.com/8thwall/engine/blob/main/LICENSE), which allows:
+
+- Installation and use of the software
+- Distribution **only in its original, unmodified form**
+- Use within applications or projects that integrate its functionality
+
+### Important restrictions
+
+- The engine **cannot be modified, reverse engineered, or repackaged**
+- Redistribution must retain all copyright and licence notices
+- The engine remains the intellectual property of Niantic Spatial
+
+A copy of the full licence text is included in `external/xr/LICENSE`
