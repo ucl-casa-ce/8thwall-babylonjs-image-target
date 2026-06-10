@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>8th Wall AR with Babylon.js</title>
+
+  <!-- 8th Wall Extras (UI + helpers) -->
+  <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
+
+  <!-- 8th Wall XR Engine (local binary, copied via Vite) -->
+  <script src="/external/xr/xr.js" data-preload-chunks="slam"></script>
+</head>
+
+<body>
+  <canvas id="camerafeed"></canvas>
+</body>
+
+<script type="module" src="/src/main.js"></script>
+
+</html>

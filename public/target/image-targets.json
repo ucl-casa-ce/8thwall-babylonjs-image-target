@@ -1,0 +1,30 @@
+[{
+  "imagePath": "/target/CE-Postcard-RotateGray.jpg",
+  "metadata": {},
+  "name": "target-image",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 0,
+    "width": 480,
+    "height": 655,
+    "originalWidth": 480,
+    "originalHeight": 655,
+    "isRotated": true
+  }
+},
+{
+  "imagePath": "/target/CE-Postcard-Rotate.jpg",
+  "metadata": {},
+  "name": "target-image2",
+  "type": "PLANAR",
+  "properties": {
+    "left": 0,
+    "top": 0,
+    "width": 480,
+    "height": 655,
+    "originalWidth": 480,
+    "originalHeight": 655,
+    "isRotated": true
+  }
+}]
