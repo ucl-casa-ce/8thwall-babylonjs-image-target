@@ -11,6 +11,9 @@ import { HemisphericLight } from '@babylonjs/core/Lights/hemisphericLight'
 import { DirectionalLight } from '@babylonjs/core/Lights/directionalLight'
 import { Observable } from '@babylonjs/core/Misc/observable'
 import { Matrix } from '@babylonjs/core/Maths/math.vector'
+import { ImportMeshAsync,SceneLoader } from '@babylonjs/core'
+
+import "@babylonjs/loaders/glTF"
 
 import * as TWEEN from '@tweenjs/tween.js'
 
@@ -27,7 +30,8 @@ window.BABYLON = {
   HemisphericLight,
   DirectionalLight,
   Observable,
-  Matrix
+  Matrix,
+  ImportMeshAsync
 }
 
 
@@ -42,7 +46,26 @@ const initXrScene  = ({ scene, camera }) => {
   //Anchor to hold the model and easily scale the model on the image target
   anchor = new TransformNode("anchor", scene)
   anchor.setEnabled(false)
-    
+
+//Import a GLTF Model
+SceneLoader.ImportMeshAsync(
+  "",
+  "/models/",
+  "CE_Logo_Base3D.glb",
+  scene
+).then((result) => {
+
+  const root = result.meshes[0] 
+  root.parent = anchor
+console.log(root);
+
+  root.position.set(0, 0, -0.02)
+  root.scaling.set(-0.1, 0.1, 0.1) //remove the mirror
+})
+
+ 
+  
+  
 // a simple geometry big as the image target
 cube = MeshBuilder.CreateBox("box", {
   width: 0.15,   // 15 cm (X)
