@@ -2,6 +2,8 @@
 
 WebAR project using the 8th Wall XR engine and Babylon.js to track image targets and anchor 3D content in real time.
 
+![image of the CE postcard with the 3d CE logo on it]((https://github.com/ucl-casa-ce/8thwall-babylonjs-image-target/blob/main/ar_postcard.jpg)
+
 ---
 
 ## Overview
