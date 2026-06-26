@@ -34,17 +34,20 @@ npm install
 ```
 
 > [!IMPORTANT]  
-> 8thWall library is currently static copied from the node_modules to the `src` folder of the project as describe in the [main repository of 8thWall](https://github.com/8thwall/engine). In case you need to setup a brand new project from scratch, this as been created using the following steps:
+> 8thWall library is currently statically copied from the node_modules to the `src` folder of the project as described in the [main repository of 8thWall](https://github.com/8thwall/engine). In case you need to set up a brand new project from scratch, this has been created using the following steps:
+>
 > ``` npm create vite@latest```
-> Framework: Vanilla
-> Select a variant: JavaScript
+>
+> - Framework: Vanilla
+> - Select a variant: JavaScript
 >
 > in the folder of the project run: 
+>
 > ```npm install @vitejs/plugin-basic-ssl vite-plugin-static-copy @tweenjs/tween.js @babylonjs/loaders @babylonjs/core @8thwall/engine-binary```
 > 
-> locate the folder `node_modules/@8thwall/engine-binary/dist` and copy the whole content in a folder in your project e.g. `public/external/xr`
+> locate the folder `node_modules/@8thwall/engine-binary/dist` and copy the whole content into a folder in your project, e.g. `public/external/xr`
 > 
-> setup the `vite.config.js` file accordingly as for the one in this repository
+> Set up the `vite.config.js` file accordingly, as for the one in this repository.
 > 
 
 
@@ -87,7 +90,7 @@ Example:
 }
 ```
 
-Multiple targets can be added as an array (attention to have unique name for eah iamge)
+Multiple targets can be added as an array (!Attention! unique name for each image)
 
 ```json
 [
