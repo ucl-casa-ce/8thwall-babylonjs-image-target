@@ -27,11 +27,26 @@ This project is a minimum configuration for:
 
 ## Setup
 
-Install dependencies:
+Download the repository and in the folder with the `package.json` file install dependencies using:
 
 ```bash
 npm install
 ```
+
+> [!IMPORTANT]  
+> 8thWall library is currently static copied from the node_modules to the `src` folder of the project as describe in the [main repository of 8thWall](https://github.com/8thwall/engine). In case you need to setup a brand new project from scratch, this as been created using the following steps:
+> ``` npm create vite@latest```
+> Framework: Vanilla
+> Select a variant: JavaScript
+>
+> in the folder of the project run: 
+> ```npm install @vitejs/plugin-basic-ssl vite-plugin-static-copy @tweenjs/tween.js @babylonjs/loaders @babylonjs/core @8thwall/engine-binary```
+> 
+> locate the folder `node_modules/@8thwall/engine-binary/dist` and copy the whole content in a folder in your project e.g. `public/external/xr`
+> 
+> setup the `vite.config.js` file accordingly as for the one in this repository
+> 
+
 
 
 ## Adding a New Image Target
